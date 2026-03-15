@@ -1,0 +1,152 @@
+/* 
+ * global.css
+ * Core design system based on "Pastoral Acres" aesthetic.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+ :root {
+     /* Color Palette */
+     --color-bg-primary: #FDFBF7; /* Cream background */
+     --color-bg-secondary: #F2EFE8; /* Slightly darker cream for contrast areas */
+     --color-text-primary: #0F4C3A; /* Deep Forest Green for headings */
+     --color-text-secondary: #2C3E35; /* Dark greenish-grey for body text */
+     --color-accent: #1D7A58;       /* Lighter green for buttons/links */
+     --color-accent-hover: #145940; /* Darker green for hover states */
+     --color-white: #FFFFFF;
+ 
+     /* Typography */
+     --font-heading: 'Playfair Display', serif;
+     --font-body: 'Inter', sans-serif;
+     
+     /* Sizing & Spacing */
+     --container-width: 1200px;
+     --spacing-sm: 0.5rem;
+     --spacing-md: 1rem;
+     --spacing-lg: 2rem;
+     --spacing-xl: 4rem;
+     
+     /* Borders & Shadows */
+     --border-radius-sm: 4px;
+     --border-radius-md: 8px;
+     --border-radius-lg: 16px;
+     --box-shadow-subtle: 0 4px 20px rgba(15, 76, 58, 0.05);
+     --box-shadow-hover: 0 10px 30px rgba(15, 76, 58, 0.1);
+     
+     /* Transitions */
+     --transition-fast: 0.2s ease;
+     --transition-normal: 0.3s ease;
+ }
+ 
+ /* CSS Reset */
+ *, *::before, *::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ html {
+     scroll-behavior: smooth;
+     font-size: 16px;
+ }
+ 
+ body {
+     font-family: var(--font-body);
+     background-color: var(--color-bg-primary);
+     color: var(--color-text-secondary);
+     line-height: 1.6;
+     overflow-x: hidden;
+ }
+ 
+ /* Typography Basics */
+ h1, h2, h3, h4, h5, h6 {
+     font-family: var(--font-heading);
+     color: var(--color-text-primary);
+     font-weight: 600;
+     line-height: 1.2;
+     margin-bottom: var(--spacing-md);
+ }
+ 
+ h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+ h2 { font-size: clamp(2rem, 4vw, 3rem); }
+ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+ 
+ p {
+     margin-bottom: var(--spacing-md);
+ }
+ 
+ a {
+     color: var(--color-accent);
+     text-decoration: none;
+     transition: color var(--transition-fast);
+ }
+ 
+ a:hover {
+     color: var(--color-accent-hover);
+ }
+ 
+ img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+ }
+ 
+ /* Layout Utility Classes */
+ .container {
+     width: 100%;
+     max-width: var(--container-width);
+     margin: 0 auto;
+     padding: 0 var(--spacing-lg);
+ }
+ 
+ .section-padding {
+     padding: var(--spacing-xl) 0;
+ }
+ 
+ .text-center { text-align: center; }
+ 
+ /* Utility helpers */
+ .hidden { display: none !important; }
+ .flex-center { display: flex; justify-content: center; align-items: center; }
+
+ /* Animations & Stickers */
+ @keyframes float {
+     0% { transform: translateY(0px) rotate(0deg); }
+     50% { transform: translateY(-10px) rotate(2deg); }
+     100% { transform: translateY(0px) rotate(0deg); }
+ }
+
+ @keyframes fadeInDown {
+     0% { opacity: 0; transform: translateY(-20px); }
+     100% { opacity: 1; transform: translateY(0); }
+ }
+
+ .sticker {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+ }
+
+ .sticker-leaf-1 { top: -20px; right: 5%; width: 60px; height: 60px; }
+ .sticker-stamp { bottom: -30px; right: -20px; width: 80px; height: 80px; transform: rotate(15deg); }
+ .sticker-sun { top: -40px; left: -20px; width: 80px; height: 80px; animation-duration: 8s;}
+
+ .animated {
+    animation: fadeInDown 1s cubic-bezier(0.1, 0.7, 0.1, 1) forwards;
+ }
+
+ /* 3D Animations & Hover Effects */
+ .hover-3d {
+     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     transform-style: preserve-3d;
+ }
+ 
+ .hover-3d:hover {
+     transform: translateY(-10px) rotateX(5deg) rotateY(-5deg);
+     box-shadow: 0 15px 35px rgba(15, 76, 58, 0.2);
+ }
+
+
+
