@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eco Malaysia: Your guide to Malaysia's hidden eco paradise. Explore sustainable travel.">
+    <title>Home | Eco Malaysia</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHXHHZH3HX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SHXHHZH3HX');
+    </script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .home-hero {
+            position: relative;
+            background-color: var(--color-bg-primary);
+            padding: var(--spacing-xxl) 0;
+            overflow: hidden;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .home-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        @media (min-width: 900px) {
+            .home-hero-grid {
+                grid-template-columns: 1.2fr 1fr;
+            }
+        }
+
+        .hero-main-img {
+            width: 100%;
+            height: clamp(400px, 50vh, 600px);
+            object-fit: cover;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .sidebar-widget {
+            background-color: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-lg);
+            box-shadow: var(--box-shadow-subtle);
+            text-align: center;
+        }
+
+        .custom-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .footer-realtime {
+            margin-top: 10px;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <svg class="custom-icon" style="width: 24px; height: 24px; color: var(--color-accent);"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7.05,10.67 9,12C9.4,12.27 10,12 10,11.5L9,8.5C9,8.22 9.22,8 9.5,8H17Z" />
+                </svg>
+                Eco Malaysia
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="blog.html" class="nav-link">Articles</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Hero Section -->
+    <section class="home-hero">
+        <div class="container home-hero-grid" style="position: relative;">
+
+            <svg class="sticker sticker-leaf-1" viewBox="0 0 24 24" fill="#1D7A58">
+                <path
+                    d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7.05,10.67 9,12C9.4,12.27 10,12 10,11.5L9,8.5C9,8.22 9.22,8 9.5,8H17Z" />
+            </svg>
+
+            <div class="animated hover-3d" style="position: relative;">
+                <img src="assets/resort_blog.png" alt="Discover Malaysia Eco Tourism" class="hero-main-img">
+                <svg class="sticker sticker-stamp" viewBox="0 0 100 100" fill="#e0ad4f">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#e0ad4f" stroke-width="4"
+                        stroke-dasharray="10 5" />
+                    <text x="50" y="55" font-family="serif" font-size="14" font-weight="bold" fill="#e0ad4f"
+                        text-anchor="middle">100% ECO</text>
+                </svg>
+            </div>
+
+            <div class="animated" style="animation-delay: 0.2s;">
+                <span
+                    style="display: inline-block; padding: 4px 12px; background-color: var(--color-accent); color: white; border-radius: 20px; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; margin-bottom: 10px;">Malaysia
+                    Tourism 2026</span>
+                <h1 style="font-size: clamp(3rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 20px;">Protecting
+                    Malaysia's Wild Heart</h1>
+                <p style="font-size: 1.2rem; color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">
+                    Aligning with the Malaysia Tourism Strategy 2022–2026. Discover sustainable luxury, breathtaking
+                    biodiversity, and responsible travel directly from the experts.</p>
+
+                <div style="display: flex; gap: 15px;">
+                    <a href="destinations.html" class="btn btn-primary hover-3d">Explore Destinations</a>
+                    <a href="blog.html" class="btn btn-outline hover-3d">Read Articles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Call to Actions -->
+    <section class="section-padding" style="background-color: var(--color-bg-secondary);">
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
+
+            <div class="sidebar-widget animated hover-3d">
+                <i class="fa-solid fa-wand-magic-sparkles custom-icon"
+                    style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">AI Assisted Plan</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 15px;">Use our advanced artificial
+                    intelligence to generate a personalized, realistic, and eco-friendly itinerary for your trip.</p>
+                <a href="about.html#planner-form"
+                    style="font-weight: 600; font-size: 0.9rem; color: var(--color-accent);">Generate Plan →</a>
+            </div>
+
+            <div class="sidebar-widget animated hover-3d" style="animation-delay: 0.2s;">
+                <i class="fa-solid fa-leaf custom-icon"
+                    style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Carbon Calculator</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 15px;">Measure your trip's exact
+                    environmental impact and learn how you can personally offset it to travel completely guilt-free.</p>
+                <a href="about.html#carbon-form"
+                    style="font-weight: 600; font-size: 0.9rem; color: var(--color-accent);">Calculate Now →</a>
+            </div>
+
+            <div class="sidebar-widget animated hover-3d" style="animation-delay: 0.4s;">
+                <i class="fa-solid fa-compass custom-icon"
+                    style="width: 40px; height: 40px; color: var(--color-accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Eco Travel Quiz</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">Not sure what
+                    kind of traveler you are? Take our multi-step personality quiz to find your ultimate travel style!
+                </p>
+                <a href="about.html#quiz-container"
+                    style="font-weight: 600; font-size: 0.9rem; color: var(--color-accent);">Take Quiz →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <a href="index.html" class="navbar-brand" style="color: var(--color-white); margin-bottom: 1rem;">
+                    <svg class="custom-icon" style="width: 24px; height: 24px; color: var(--color-accent);"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7.05,10.67 9,12C9.4,12.27 10,12 10,11.5L9,8.5C9,8.22 9.22,8 9.5,8H17Z" />
+                    </svg>
+                    Eco Malaysia
+                </a>
+                <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Promoting responsible travel while
+                    protecting Malaysia’s incredible biodiversity.</p>
+                <div class="footer-realtime" id="realtime-clock">Loading live time...</div>
+
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="blog.html">Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="current-year">2026</span> Eco Malaysia. All rights reserved. | Created by Revanth
+            Cheemaladari
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+</body>
+
+</html>

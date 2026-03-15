@@ -1,0 +1,12 @@
+{
+  "name": "eco-malaysia-tourism",
+  "version": "1.0.0",
+  "description": "Eco Malaysia Tourism Website",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.37.0",
+    "redis": "^5.11.0"
+  }
+}
