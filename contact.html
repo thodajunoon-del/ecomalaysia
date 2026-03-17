@@ -164,7 +164,7 @@
                 <h2 style="margin-bottom: var(--spacing-sm);">Send Feedback or Inquiry</h2>
                 <p style="font-size: 0.9rem; margin-bottom: var(--spacing-md);">Your feedback helps us promote better sustainable practices.</p>
                 
-                <form action="https://formspree.io/f/mnnakpwr" method="POST">
+                <form action="https://formspree.io/f/myknbwlw" method="POST">
                     <div class="form-group">
                         <label for="name" style="display: block; margin-bottom: 5px; font-weight: 500;">Full Name</label>
                         <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
@@ -176,18 +176,47 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="subject" style="display: block; margin-bottom: 5px; font-weight: 500;">Subject</label>
-                        <select id="subject" name="subject" class="form-control">
-                            <option value="General Inquiry">General Inquiry</option>
-                            <option value="Trip Planning">Trip Planning</option>
-                            <option value="Feedback">Website Feedback</option>
-                            <option value="Partnership">Partnership</option>
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">How did you find out about Eco Malaysia?</label>
+                        <select name="discovery_source" class="form-control" required>
+                            <option value="">Select an option</option>
+                            <option value="Search Engine">Search Engine (Google, Bing, etc.)</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Friend or Family">Friend or Family</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message" style="display: block; margin-bottom: 5px; font-weight: 500;">Your Message</label>
-                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="How can we help you travel greener?" required style="resize: vertical;"></textarea>
+                    <div class="form-group" style="margin-top: 15px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">How would you rate your experience on our website?</label>
+                        <div style="display: flex; gap: 15px; margin-top: 5px;">
+                            <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                                <input type="radio" name="website_experience" value="Excellent" required>
+                                Excellent
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                                <input type="radio" name="website_experience" value="Good" required>
+                                Good
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                                <input type="radio" name="website_experience" value="Average" required>
+                                Average
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                                <input type="radio" name="website_experience" value="Poor" required>
+                                Poor
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 15px; margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">What is the primary reason for your visit today?</label>
+                        <select name="visit_reason" class="form-control" required>
+                            <option value="">Select a reason</option>
+                            <option value="Research Destinations">Researching Destinations</option>
+                            <option value="Looking for Activities">Looking for Activities</option>
+                            <option value="Reading Articles">Reading Articles/Blog</option>
+                            <option value="General Interest">General Interest in Eco-Tourism</option>
+                        </select>
                     </div>
 
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
